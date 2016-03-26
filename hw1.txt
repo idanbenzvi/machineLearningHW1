@@ -1,0 +1,15 @@
+The weights for question 7 are: [-0.005433141767023058, 0.9269144414854801, 0.9444314799310903, 0.9995129250692003, 0.9970413914347447, 0.9658257637231326, 0.6348740425221038, 0.9783079247660499, 0.9572713479036321, -1.0483191766121132, 0.9013243898538585, -1.0659126106227792, 0.934627168909466, 0.8726217867819412]
+The error for question 7 is 6.969171937625632E-8
+
+============
+
+Reasoning behind the chosen Alpha value
+=======================================
+The alpha value was chosen after 20,000 consecutive gradients were calculated per each alpha value ranging from 3^-17 to 3^2.
+The alpha value that generated the minimal cost value (calculated VIA the SE error function) was selected between all possible options.
+
+Convergence stop condition
+==========================
+After choosing the alpha from the available options - the selected learning rate was implemented on the data to discover the weights.
+The process was stopped once it has acheived our convergence thershold which was set as 0.0003 difference between every 100 iterations. E.g., if the
+difference between each consectuive 100 iterations was smaller than the required rate of change - the process is to be concluded.

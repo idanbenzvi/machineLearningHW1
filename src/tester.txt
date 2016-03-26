@@ -1,0 +1,107 @@
+% 1. Title: Boston Housing Data
+% 
+% 2. Sources:
+%    (a) Origin:  This dataset was taken from the StatLib library which is
+%                 maintained at Carnegie Mellon University.
+%    (b) Creator:  Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the 
+%                  demand for clean air', J. Environ. Economics & Management,
+%                  vol.5, 81-102, 1978.
+%    (c) Date: July 7, 1993
+% 
+% 3. Past Usage:
+%    -   Used in Belsley, Kuh & Welsch, 'Regression diagnostics ...', Wiley, 
+%        1980.   N.B. Various transformations are used in the table on
+%        pages 244-261.
+%     -  Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning.
+%        In Proceedings on the Tenth International Conference of Machine 
+%        Learning, 236-243, University of Massachusetts, Amherst. Morgan
+%        Kaufmann.
+% 
+% 4. Relevant Information:
+% 
+%    Concerns housing values in suburbs of Boston.
+% 
+% 5. Number of Instances: 506
+% 
+% 6. Number of Attributes: 13 continuous attributes (including "class"
+%                          attribute "MEDV"), 1 binary-valued attribute.
+% 
+% 7. Attribute Information:
+% 
+%     1. CRIM      per capita crime rate by town
+%     2. ZN        proportion of residential land zoned for lots over 
+%                  25,000 sq.ft.
+%     3. INDUS     proportion of non-retail business acres per town
+%     4. CHAS      Charles River dummy variable (= 1 if tract bounds 
+%                  river; 0 otherwise)
+%     5. NOX       nitric oxides concentration (parts per 10 million)
+%     6. RM        average number of rooms per dwelling
+%     7. AGE       proportion of owner-occupied units built prior to 1940
+%     8. DIS       weighted distances to five Boston employment centres
+%     9. RAD       index of accessibility to radial highways
+%     10. TAX      full-value property-tax rate per $10,000
+%     11. PTRATIO  pupil-teacher ratio by town
+%     12. B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks 
+%                  by town
+%     13. LSTAT    % lower status of the population
+%     14. MEDV     Median value of owner-occupied homes in $1000's
+% 
+% 8. Missing Attribute Values:  None.
+% 
+
+@relation 'testerforgradientdescent'
+@attribute CRIM real
+@attribute ZN real
+@attribute INDUS real
+@attribute class real
+@data
+1,2,3,4
+2,4,6,8
+3,6,9,12
+4,8,12,16
+5,10,15,20
+6,12,18,24
+7,14,21,28
+8,16,24,32
+9,18,27,36
+10,20,30,40
+11,22,33,44
+12,24,36,48
+13,26,39,52
+14,28,42,56
+15,30,45,60
+16,32,48,64
+17,34,51,68
+18,36,54,72
+19,38,57,76
+20,40,60,80
+21,42,63,84
+22,44,66,88
+23,46,69,92
+24,48,72,96
+25,50,75,100
+26,52,78,104
+27,54,81,108
+28,56,84,112
+29,58,87,116
+30,60,90,120
+31,62,93,124
+32,64,96,128
+33,66,99,132
+34,68,102,136
+35,70,105,140
+36,72,108,144
+37,74,111,148
+38,76,114,152
+39,78,117,156
+40,80,120,160
+41,82,123,164
+42,84,126,168
+43,86,129,172
+44,88,132,176
+45,90,135,180
+46,92,138,184
+47,94,141,188
+48,96,144,192
+49,98,147,196
+50,100,150,200
